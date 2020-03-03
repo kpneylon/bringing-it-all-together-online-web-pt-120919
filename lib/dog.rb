@@ -19,7 +19,6 @@ class Dog
     SQL
 
     DB[:conn].execute(sql)
-    Dog.new
   end
 
   def self.drop_table
