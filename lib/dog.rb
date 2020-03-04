@@ -47,7 +47,6 @@ class Dog
   def self.create(name:, breed:)
     Dog.new
     Dog.save
-    dog
   end
 
   def self.find_by_id(id)
