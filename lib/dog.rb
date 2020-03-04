@@ -44,10 +44,11 @@ class Dog
     self
   end
 
-  def self.create(name:, breed:)
-    Dog.new
-    Dog.save
-  end
+  def self.create(name:name,breed:breed)
+        dog_attributes = {name: name,breed: breed}
+        dog = Dog.new(dog_attributes)
+        dog.save
+    end
 
   def self.find_by_id(id)
     sql = "SELECT * FROM dogs WHERE id = ?"
